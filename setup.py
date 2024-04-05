@@ -16,7 +16,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.10.6',
     ],
-    keywords='example library',
+    keywords='mwtric writer prometheus',
     packages=find_packages(),
     python_requires='>=3.6',
     install_requires=[],  # Add any dependencies your library requires
