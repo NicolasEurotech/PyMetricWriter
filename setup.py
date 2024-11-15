@@ -20,10 +20,5 @@ setup(
     packages=find_packages(),
     python_requires='>=3.6',
     install_requires=[],
-    entry_points={
-        'console_scripts': [
-            'PyMetricWriter=PyMetricWriter.main',
-        ],
-    },
     include_package_data=True
 )
