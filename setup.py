@@ -24,5 +24,6 @@ setup(
         'console_scripts': [
             'PyMetricWriter=PyMetricWriter.main',
         ],
-    }
+    },
+    include_package_data=True
 )
