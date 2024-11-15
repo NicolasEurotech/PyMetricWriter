@@ -1,0 +1,7 @@
+README.md
+setup.py
+PyMetricWriter.egg-info/PKG-INFO
+PyMetricWriter.egg-info/SOURCES.txt
+PyMetricWriter.egg-info/dependency_links.txt
+PyMetricWriter.egg-info/entry_points.txt
+PyMetricWriter.egg-info/top_level.txt

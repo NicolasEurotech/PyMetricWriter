@@ -1,0 +1,3 @@
+[console_scripts]
+PyMetricWriter = PyMetricWriter.main
+
