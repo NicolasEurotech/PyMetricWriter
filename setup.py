@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='MetricWriterPy',
+    name='PyMetricWriter',
     version='0.1.2',
     description='A metrci writer for prometheus in python.',
     long_description=open('README.md').read(),
