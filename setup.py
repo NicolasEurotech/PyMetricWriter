@@ -21,5 +21,5 @@ setup(
         include=['PyMetricWriter', 'PyMetricWriter.*','*']
     ),
     python_requires='>=3.6',
-    install_requires=[]
+    install_requires=['wheel']
 )
