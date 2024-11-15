@@ -18,7 +18,7 @@ setup(
     ],
     keywords='metric writer prometheus',
     packages=find_packages(
-        include=['MetricWriterPy', 'MetricWriterPy.*']
+        include=['PyMetricWriter', 'PyMetricWriter.*']
     ),
     python_requires='>=3.6',
     install_requires=[]
