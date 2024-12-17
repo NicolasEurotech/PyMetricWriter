@@ -2,7 +2,6 @@ import os
 import re
 import time
 
-
 class MetricWriter:
     """
     # This class is used to write metrics in .prom file.\n
@@ -111,27 +110,27 @@ class MetricWriter:
         Place default values.
         """
         self.__create_file()
-        self.append_in_file("status", "2")
+        self.append_in_file("status", "0")
         self.append_in_file("start_time", self.start_time)
         self.append_in_file("end_time", "0")
         self.append_in_file("execution_time", "0")
     
-    def end_execution(self, end_status : int = 0):
+    def end_execution(self, status : int = 999):
         """
         ### Define the time of end execution of the function and the status of complete function.\n
         end_status can be:\n
-        0 -> If the program is in ERROR or not complete.\n
+        0 -> If the program is RUN or not complete.\n
         1 -> If is completed or OK.\n
-        2 -> If is in RUN
+        other -> If it has some error or other status.\n
         """
         #STATUS JOB
-        match end_status:
+        match status:
             case 0:
                 self.change_metric_value("status","0")
             case 1:
                 self.change_metric_value("status","1")
             case _: 
-                self.change_metric_value("status","2")
+                self.change_metric_value("status", str(status))
 
         #STOP TIME
         self.__set_end_time(time.time())
